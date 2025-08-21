@@ -1,0 +1,14 @@
+backend:
+  name: git-gateway
+  branch: main   # o la rama donde tengas tu proyecto
+
+media_folder: "public/uploads"   # dónde guardar imágenes
+public_folder: "/uploads"
+
+collections:
+  - name: "testimonios"
+    label: "Testimonios"
+    file: "src/data/testimonios.json"   # ruta a tu JSON en el repo
+    fields:
+      - { label: "Nombre", name: "npmbre", widget: "text" }
+      - { label: "Cargo", name: "cargo", widget: "string" }
