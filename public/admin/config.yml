@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: valeria9605/admin
   branch: main   # o la rama donde tengas tu proyecto
 
 media_folder: "public/uploads"   # dónde guardar imágenes
