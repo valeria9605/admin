@@ -10,5 +10,5 @@ collections:
     label: "Testimonios"
     file: "src/data/testimonios.json"   # ruta a tu JSON en el repo
     fields:
-      - { label: "Nombre", name: "npmbre", widget: "text" }
+      - { label: "Nombre", name: "nombre", widget: "text" }
       - { label: "Cargo", name: "cargo", widget: "string" }
