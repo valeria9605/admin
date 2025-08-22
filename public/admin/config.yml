@@ -6,9 +6,11 @@ media_folder: "public/uploads"   # dónde guardar imágenes
 public_folder: "/uploads"
 
 collections:
-  - name: "testimonios"
-    label: "Testimonios"
-    folder: "src/data/testimonios.json"   # ruta a tu JSON en el repo
+  - name: "testimonios" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/data/testimonios" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{nombre}}-{{cargo}}" 
     fields:
       - { label: "Nombre", name: "nombre", widget: "text" }
       - { label: "Cargo", name: "cargo", widget: "string" }
