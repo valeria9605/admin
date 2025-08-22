@@ -8,7 +8,7 @@ public_folder: "/uploads"
 collections:
   - name: "testimonios"
     label: "Testimonios"
-    folder: "src/data"   # ruta a tu JSON en el repo
+    folder: "src/data/"   # ruta a tu JSON en el repo
     fields:
       - { label: "Nombre", name: "nombre", widget: "text" }
       - { label: "Cargo", name: "cargo", widget: "string" }
